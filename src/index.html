@@ -12,13 +12,17 @@
         rel="stylesheet">
 </head>
 
-<body class="font-dmsans">
-    <main>
-        <header>
-            <img class="w-10 h-10" src="./images/star.svg" alt="" />
-            <p>Michał Stryjski</p>
-            <p>Frontend developer</p>
-            <nav>
+<body class="font-dmsans bg-bg text-white">
+    <main class="px-4">
+        <header class="max-w-ms mx-auto py-6">
+            <div class="flex gap-4 items-center">
+                <img class="w-10 h-10" src="./images/star.svg" alt="" />
+                <div>
+                    <p class="text-xl font-bold text-accent">Michał Stryjski</p>
+                    <p class="text-white opacity-40 uppercase text-xs tracking-wider">Frontend developer</p>
+                </div>
+            </div>
+            <nav class="hidden">
                 <ul>
                     <li><a href="#about">About</a></li>
                     <li><a href="#skills">Skills</a></li>
@@ -28,66 +32,79 @@
                 </ul>
             </nav>
         </header>
-        <section id="about">
-            <h1>My name is Michał and I’m an aspiring Frontend developer.</h1>
-            <p>You might be interested in checking the list of my skills. Don’t forget to have a glimpse at my projects.
-                I’m looking for a new challenges so if you have one - contact me 😊</p>
-            <a href="#contact">Get in touch</a>
-            <a href="#skills">Get to know me</a>
-            <img src="./images/michal.png" class="w-44 h-44" alt="" />
+        <section id="about" class="max-w-ms mx-auto py-6 mb-20">
+            <img src="./images/michal.png" class="w-full mb-5" alt="" />
+            <h1 class="font-bold text-2xl tracking-tight mb-4">My name is Michał and I'm an aspiring <span
+                    class="text-accent">Frontend developer</span>.</h1>
+            <p class="text-gray-400 mb-8">You might be interested in checking the list of my <a href="#skills"
+                    class="text-white">skills</a>. Don't forget to have a glimpse at my <a href="#projects"
+                    class="text-white">projects</a>.
+                I'm looking for a new challenges so if you have one - <a href="#contact" class="text-white">contact
+                    me</a>😊</p>
+            <div class="flex flex-col items-start gap-4">
+                <a href="#contact"
+                    class="bg-accent text-bg flex gap-3 py-2  px-4 items-center font-bold text-xl rounded-[0.625rem]"><img
+                        src="./images/chat.svg" alt="chat icon">Get in touch</a>
+                <a href="#about"
+                    class="bg-bg text-accent flex gap-3 py-2  px-4 items-center font-bold text-xl rounded-[0.625rem] border-lightGray border-2"><img
+                        src="./images/person-icon.svg" alt="person icon">Get to know me</a>
+            </div>
         </section>
-        <section id="skills">
+        <section id="skills" class="max-w-ms mx-auto py-6">
             <h2>MY SKILSS</h2>
             <p>I've picked up some cool skills along the way, and I'm excited to share them with you. Check out what I
                 can do below!</p>
-        </section>
-        <article>
-            <img src="./images/triangle.svg" class="w-44 h-44" alt="">
-            <h3>Working knowledge</h3>
-            <ul>
-                <li>— Flexbox</li>
-                <li>— Markdown</li>
-                <li>— JS: Local storage</li>
-                <li>— Figma</li>
-                <li>— CSS grid
-                <li>— Forms</li>
-                <li>— JS: DOM manipulations</li>
-                <li>— SASS</li>
-                <li>— Semantic HTML5</li>
-            </ul>
-        </article>
-        <article>
-            <img src="./images/circle.svg" class="w-44 h-44" alt="">
-            <h3>Know something about</h3>
-            <ul>
-                <li>— JavaScript ES6 + features</li>
-                <li>— CSS animations</li>
-                <li> — Working with API</li>
-                <li>— NPM Scripts</li>
-                <li>— PWA</li>
-                <li> — Git</li>
-                <li> — Accessibility</li>
-            </ul>
-        </article>
-        <article>
-            <img src="./images/flower.svg" class="w-44 h-44" alt="">
-            <h3>Want to learn</h3>
-            <ul>
-                <li>— React</li>
-                <li> — Node</li>
-                <li> — Electron</li>
-                <li> — SSR</li>
-                <li> — TypeScript</li>
-                <li> — Gatsby</li>
-                <li> — WebSockets</li>
-            </ul>
-        </article>
-        <section id="projects">
-            <h2>Recent Projects</h2>
-            <p>Since diving into frontend development in 2023, I've brought a range of projects to life. Here's a snapshot of my accomplishments so far.</p>
             <article>
-                <h3>simple-editor</h3><p><img src="./images/smal-star.svg" alt="">27</p>
-                <p>Phasellus dolor. In dui magna, posuere eget, vestibulum et, tempor auctor, justo fringilla mauris sit amet nibh. Suspendisse pulvinar, augue ac venenatis condimentum, sem libero volutpat...</p>
+                <img src="./images/triangle.svg" class="w-44 h-44" alt="">
+                <h3>Working knowledge</h3>
+                <ul>
+                    <li>— Flexbox</li>
+                    <li>— Markdown</li>
+                    <li>— JS: Local storage</li>
+                    <li>— Figma</li>
+                    <li>— CSS grid
+                    <li>— Forms</li>
+                    <li>— JS: DOM manipulations</li>
+                    <li>— SASS</li>
+                    <li>— Semantic HTML5</li>
+                </ul>
+            </article>
+            <article>
+                <img src="./images/circle.svg" class="w-44 h-44" alt="">
+                <h3>Know something about</h3>
+                <ul>
+                    <li>— JavaScript ES6 + features</li>
+                    <li>— CSS animations</li>
+                    <li> — Working with API</li>
+                    <li>— NPM Scripts</li>
+                    <li>— PWA</li>
+                    <li> — Git</li>
+                    <li> — Accessibility</li>
+                </ul>
+            </article>
+            <article>
+                <img src="./images/flower.svg" class="w-44 h-44" alt="">
+                <h3>Want to learn</h3>
+                <ul>
+                    <li>— React</li>
+                    <li> — Node</li>
+                    <li> — Electron</li>
+                    <li> — SSR</li>
+                    <li> — TypeScript</li>
+                    <li> — Gatsby</li>
+                    <li> — WebSockets</li>
+                </ul>
+            </article>
+        </section>
+        <section id="projects" class="max-w-ms mx-auto py-6">
+            <h2>Recent Projects</h2>
+            <p>Since diving into frontend development in 2023, I've brought a range of projects to life. Here's a
+                snapshot of my accomplishments so far.</p>
+            <article>
+                <h3>simple-editor</h3>
+                <p><img src="./images/smal-star.svg" alt="">27</p>
+                <p>Phasellus dolor. In dui magna, posuere eget, vestibulum et, tempor auctor, justo fringilla mauris sit
+                    amet nibh. Suspendisse pulvinar, augue ac venenatis condimentum, sem libero volutpat...</p>
                 <ul>
                     <li>HTML</li>
                     <li>CSS</li>
@@ -97,31 +114,36 @@
                 <a href="#">Source demo</a>
             </article>
         </section>
-        <section>
+        <section class="max-w-ms mx-auto py-6">
             <h2>After hours</h2>
-            <p>Outside of my regular working hours, I delve into an array of activities and passions. Here's a glimpse into how I spend my after-hours.</p>
+            <p>Outside of my regular working hours, I delve into an array of activities and passions. Here's a glimpse
+                into how I spend my after-hours.</p>
             <article>
                 <img src="./images/electronics-music.png" alt="">
                 <h2>Electronic Music</h2>
-                <p>Outside of my regular working hours, I immerse myself in the pulsating rhythms and innovative sounds of electronic music</p>
+                <p>Outside of my regular working hours, I immerse myself in the pulsating rhythms and innovative sounds
+                    of electronic music</p>
             </article>
             <article>
                 <img src="./images/electronics-music.png" alt="">
                 <h2>Electronic Music</h2>
-                <p>Outside of my regular working hours, I immerse myself in the pulsating rhythms and innovative sounds of electronic music</p>
+                <p>Outside of my regular working hours, I immerse myself in the pulsating rhythms and innovative sounds
+                    of electronic music</p>
             </article>
             <article>
                 <img src="./images/electronics-music.png" alt="">
                 <h2>Electronic Music</h2>
-                <p>Outside of my regular working hours, I immerse myself in the pulsating rhythms and innovative sounds of electronic music</p>
+                <p>Outside of my regular working hours, I immerse myself in the pulsating rhythms and innovative sounds
+                    of electronic music</p>
             </article>
             <article>
                 <img src="./images/electronics-music.png" alt="">
                 <h2>Electronic Music</h2>
-                <p>Outside of my regular working hours, I immerse myself in the pulsating rhythms and innovative sounds of electronic music</p>
+                <p>Outside of my regular working hours, I immerse myself in the pulsating rhythms and innovative sounds
+                    of electronic music</p>
             </article>
         </section>
-        <section id="contact">
+        <section id="contact" class="max-w-ms mx-auto py-6">
             <h2>Let's work together</h2>
             <p>I'm open for new opportunities. <br> you have one for me we should talk!</p>
             <a href="mailto:stryjski.michal@gmail.com">stryjski.michal@gmail.com</a>
