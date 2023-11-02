@@ -14,7 +14,7 @@
 
 <body class="font-dmsans bg-bg text-white">
     <main class="px-4">
-        <header class="max-w-ms mx-auto py-6">
+        <header class="flex justify-between max-w-ms mx-auto py-6 gap-4">
             <div class="flex gap-4 items-center">
                 <img class="w-10 h-10" src="./images/star.svg" alt="" />
                 <div>
@@ -22,13 +22,13 @@
                     <p class="text-white opacity-40 uppercase text-xs tracking-wider">Frontend developer</p>
                 </div>
             </div>
-            <nav class="hidden">
-                <ul>
+            <nav class="hidden md:block">
+                <ul class="flex gap-10 font-bold"
                     <li><a href="#about">About</a></li>
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#projects">Projects</a></li>
-                    <li><a download href="#">Resume</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a download href="#" class="flex gap-2 items-center"><img src="./images/download.svg" class="w-5 h-5">Resume</a></li>
+                    <li><a href="#contact" class="bg-accent text-bg font-bold py-3.5 px-8 rounded-wtf">Contact</a></li>
                 </ul>
             </nav>
         </header>
@@ -46,7 +46,7 @@
                     class="bg-accent text-bg flex gap-3 py-2  px-4 items-center font-bold text-xl rounded-wtf"><img
                         src="./images/chat.svg" alt="chat icon">Get in touch</a>
                 <a href="#about"
-                    class="bg-bg text-accent flex gap-3 py-2  px-4 items-center font-bold text-xl rounded-wtf border-lightGray border-2"><img
+                    class="bg-bg text-accent flex gap-3 py-2  px-4 items-center font-bold text-xl rounded-xl border-lightGray border-2"><img
                         src="./images/person-icon.svg" alt="person icon">Get to know me</a>
             </div>
         </section>
